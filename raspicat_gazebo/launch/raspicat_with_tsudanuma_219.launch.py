@@ -27,8 +27,8 @@ def generate_launch_description():
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     gui = LaunchConfiguration('gui', default='true')
-    x_pose = LaunchConfiguration('x_pose', default='6.0')
-    y_pose = LaunchConfiguration('y_pose', default='8.5')
+    x_pose = LaunchConfiguration('x_pose', default='21.055236')
+    y_pose = LaunchConfiguration('y_pose', default='8.438537')
     yaw_pose = LaunchConfiguration('yaw_pose', default='0.0')
     
     world = LaunchConfiguration('world', default=os.path.join(
@@ -51,7 +51,7 @@ def generate_launch_description():
         'world', default_value=os.path.join(
             get_package_share_directory('raspicat_gazebo'),
             'worlds',
-            'turtlebot3_house.world'),
+            'tsudanuma_219.world'),
         description='world configuration file path'
     )
 

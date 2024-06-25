@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://tsudanuma_2_19</uri>
+    </include>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>30.104601 -1.954043 14.162038 0 0.827643 1.852192</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+  </world>
+</sdf>

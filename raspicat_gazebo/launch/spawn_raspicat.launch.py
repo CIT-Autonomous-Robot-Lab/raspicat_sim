@@ -22,6 +22,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     x_pose = LaunchConfiguration('x_pose', default='0.0')
     y_pose = LaunchConfiguration('y_pose', default='0.0')
+    yaw_pose = LaunchConfiguration('yaw_pose', default='0.0')
 
     declare_x_position = DeclareLaunchArgument(
         'x_pose', default_value='0.0',
@@ -39,7 +40,8 @@ def generate_launch_description():
             '-topic', '/robot_description',
             '-x', x_pose,
             '-y', y_pose,
-            '-z', '0.0'
+            '-z', '0.0',
+            '-Y', yaw_pose,
         ],
         output='screen',
     )

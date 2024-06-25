@@ -9,7 +9,10 @@
     </include>
     <include>
       <uri>model://turtlebot3_house</uri>
+      <pose>10 10 0 0 0 0</pose>
     </include>
+
+
 
     <physics type="ode">
       <real_time_update_rate>1000.0</real_time_update_rate>
@@ -28,7 +31,7 @@
 
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>5 -5 2 0 0.275643 2.35619</pose>
+        <pose frame=''>6 5 5 0 0.275643 2.35619</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

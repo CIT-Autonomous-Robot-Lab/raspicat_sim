@@ -34,7 +34,7 @@ def generate_launch_description():
     world = LaunchConfiguration('world', default=os.path.join(
         get_package_share_directory('raspicat_gazebo'),
         'worlds',
-        'turtlebot3_house.world')
+        'tsudanuma_campus.world')
     )
 
     declare_use_sim_time = DeclareLaunchArgument(

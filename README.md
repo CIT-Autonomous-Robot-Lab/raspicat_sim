@@ -18,11 +18,16 @@ Gazebo上でシミュレートできるRaspberry Pi CatのROS 2パッケージ�
 
 ```sh
 # パッケージのダウンロード
+mkdir ~/catkin_ws/src -p
 cd ~/catkin_ws/src
-git clone -b ros2 https://github.com/rt-net/raspicat_sim.git
+git clone git@github.com:makotoyoshigoe/raspicat_sim.git
 git clone -b ros2 https://github.com/rt-net/raspicat_description.git
 git clone -b ros2 https://github.com/rt-net/raspicat_ros.git
 git clone -b $ROS_DISTRO-devel https://github.com/rt-net/raspimouse2
+
+# 津田沼モデルのセットアップ
+mkdir ~/.gazebo/models -p
+cp -r ~/catkin_ws/src/raspicat_sim/raspicat_gazebo/models/* ~/.gazebo/models
 
 # 依存パッケージのインストール
 rosdep update

@@ -60,12 +60,12 @@ roslaunch raspicat_gazebo raspicat_with_iscas_museum.launch
 
 * 津田沼キャンパスシミュレータの立ち上げ
 ```
-roslaunch raspicat_gazebo raspicat_with_tsudanuma_campus.launch.py
+ros2 launch raspicat_gazebo raspicat_with_tsudanuma_campus.launch.py
 ```
 
 * 津田沼2号館19階シミュレータの立ち上げ
 ```
-roslaunch raspicat_gazebo raspicat_with_tsudanuma_219.launch.py
+ros2 launch raspicat_gazebo raspicat_with_tsudanuma_219.launch.py
 ```
 
 __SLAMやNavigationのソフトウェアと組み合わせる方法など、より詳しい使い方については[RT Software Tutorials](https://rt-net.github.io/tutorials/raspicat/)を参照してください。__
